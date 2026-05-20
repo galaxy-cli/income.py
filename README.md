@@ -18,28 +18,28 @@ You can run individual specialized evaluation blocks using dedicated CLI argumen
 
 ### Global Module Execution
 ```bash
-python3 pay_tool.py --all
+pay --all
 ```
 
 ### Targeted Command Flags
 ```bash
 # Evaluate wage structures and salary breakdown mechanics
-python3 pay_tool.py --pay-metrics
+pay --pay-metrics
 
 # Evaluate roommate housing split percentages and balance reserves 
-python3 pay_tool.py --monthly-rent
+pay --monthly-rent
 
 # Evaluate economic baseline class tier thresholds via Pew metrics
-python3 pay_tool.py --pay-bracket
+pay --pay-bracket
 
 # Run investment allocation waterfalls against gross-to-net pay
-python3 pay_tool.py --investment
+pay --investment
 ```
 
 ### Custom Work Schedules
 Redefine structural salary breakdowns to hours by setting exact days worked in a standard week (Default baseline is `5.0`):
 ```bash
-python3 pay_tool.py --pay-metrics --hourly-days 4.5
+pay --pay-metrics --hourly-days 4.5
 ```
 
 ---
